@@ -6,11 +6,8 @@ This project illustrates how to utilize a 3rd party library, e.x. OpenCV in Andr
 
 ## Prerequisite:
 
-Download and extract OpenCV 3.0 for Android from http://opencv.org/.
-
-## Procedures:
-
-1. Create a new project in Android Studio with "No Activity".
+1. Download and extract OpenCV 3.0 for Android from http://opencv.org/.
+2. Create a new project in Android Studio with "No Activity".
 
 ![alt tag](https://github.com/DeLaSalleUniversity-Manila/opencvcamerapreviewsample-melvincabatuan/blob/master/OpenCV_001.png)
 
@@ -18,14 +15,15 @@ Download and extract OpenCV 3.0 for Android from http://opencv.org/.
 
 ![alt tag](https://github.com/DeLaSalleUniversity-Manila/opencvcamerapreviewsample-melvincabatuan/blob/master/OpenCV_003.png)
 
-2. Create a folder called "libraries" inside your Android Studio project.
+## Procedures:
 
-3. Copy the entire content of 'OpenCV-android-sdk/sdk/java' into "libraries" directory created in Procedure 2. 
+1. Create a folder called "libraries" inside your Android Studio project.
 
-4. Rename 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/java' into 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv' 
+2. Copy the entire content of 'OpenCV-android-sdk/sdk/java' into "libraries" directory created in Procedure 2. 
 
-5. Create a 'build.gradle' file inside 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv'
+3. Rename 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/java' into 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv' 
 
+4. Create a 'build.gradle' file inside 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv'
 Ex. 
 
 ```gradle
@@ -63,20 +61,21 @@ android {
 	}
 }
 ```
+Note: This file is subject to your own 'compileSdkVersion','buildToolsVersion','targetSdkVersion', etc.
 
-Note: This file is subject to your own 'compileSdkVersion','buildToolsVersion','targetSdkVersion', etc.  
-
-6. Go to 'File/Project Structure' and inside 'Modules' click 'app', then from the Tab pick 'Dependencies', click '+' to add new dependency, pick 'Module Dependency', and add 'library:opencv' dependency to your project, then click OK.
+* Go to 'File/Project Structure' and inside 'Modules' click 'app', then from the Tab pick 'Dependencies', click '+' to add new dependency, pick 'Module Dependency', and add 'library:opencv' dependency to your project, then click OK.
 
 ![alt tag](https://github.com/DeLaSalleUniversity-Manila/opencvcamerapreviewsample-melvincabatuan/blob/master/OpenCV_004.png)
 
-7. Go to 'OpenCV-android-sdk/samples', pick a sample project, e.x. 'tutorial-1-camerapreview'.  
+## Adding the Sample Project
 
-8. Delete the 'res' folder inside your own project app/src/main, then place the res folder from the samples inside your app/src/main folder.
+1. Go to 'OpenCV-android-sdk/samples', pick a sample project, e.x. 'tutorial-1-camerapreview'.  
 
-9. Delete the 'java' folder from app/src/main, then copy the 'src' folder from the samples in there. Rename the copied 'src' folder into 'java'.
+2. Delete the 'res' folder inside your own project app/src/main, then place the res folder from the samples inside your app/src/main folder.
 
-10. Replace the manifest inside your own project using the samples manifest.
+3. Delete the 'java' folder from app/src/main, then copy the 'src' folder from the samples in there. Rename the copied 'src' folder into 'java'.
+
+4. Replace the manifest inside your own project using the samples manifest.
 
 E.x.
 
