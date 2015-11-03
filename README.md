@@ -22,7 +22,7 @@ This project illustrates how to utilize a 3rd party library, e.x. OpenCV in Andr
 2. Copy the entire content of 'OpenCV-android-sdk/sdk/java' into "libraries" directory created in Procedure 2. 
 
 3. Rename 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/java' into 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv' 
-4. Add 'include ':libraries:opencv' to 'settings.gradle'.
+4. Add "include ':libraries:opencv'" to 'settings.gradle'.
 5. Create a 'build.gradle' file inside 'AndroidStudioProjects/OpenCV3-CameraPreview/libraries/opencv'
 Ex. 
 
